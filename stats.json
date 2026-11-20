@@ -1,0 +1,2221 @@
+{
+  "repo": "government-open-data-api-endpoints",
+  "title": "Government open data API endpoints",
+  "snapshot": "2026-11-15",
+  "snapshot_text": "15 Nov 2026",
+  "snapshot_time": "2026-11-15 09:06:22 IST",
+  "tested_total": 5129834,
+  "passed_total": 3726509,
+  "rows": 1329192,
+  "unique_urls": 1329192,
+  "services": 57593,
+  "country_codes": 250,
+  "single_country": null,
+  "agent_ready": 1008314,
+  "range": {
+    "min": "2026-11-10",
+    "max": "2026-11-15",
+    "text": "10–15 Nov 2026"
+  },
+  "formats": {
+    "json": 1008314,
+    "csv": 240647,
+    "xml": 57902,
+    "geojson": 9867,
+    "zip": 8297,
+    "txt": 4165
+  },
+  "categories": {
+    "Government & Open Data": 1329192
+  },
+  "tags": {
+    "government": 1329192,
+    "no-key": 1329192,
+    "open-data": 1329192,
+    "agent-ready": 1008314,
+    "json": 1008314,
+    "maps": 521533,
+    "csv": 240647,
+    "xml": 57902,
+    "statistics": 21862,
+    "transit": 21332,
+    "geojson": 9867,
+    "finance": 6341,
+    "science": 4793,
+    "weather": 4189,
+    "aviation": 3647,
+    "mcp-server": 3126,
+    "health": 2193,
+    "energy": 2061,
+    "economy": 1965,
+    "environment": 1847,
+    "ai-ml": 1665,
+    "oceans": 1157,
+    "parking": 846,
+    "hazards": 819,
+    "rivers": 781,
+    "forecast": 661,
+    "maritime": 587,
+    "floods": 424,
+    "air-quality": 365,
+    "speech": 325,
+    "elevation": 290,
+    "traffic": 228,
+    "climate": 211,
+    "earthquakes": 160,
+    "groundwater": 89,
+    "wildfire": 86,
+    "tides": 79,
+    "volcanoes": 79,
+    "llm": 75,
+    "geocoding": 69,
+    "tsunami": 36,
+    "embeddings": 31,
+    "bike-share": 26,
+    "image-gen": 4,
+    "gtfs": 2,
+    "gbfs": 1
+  },
+  "dates": {
+    "2026-11-15": 1074036,
+    "2026-11-14": 110570,
+    "2026-11-13": 25418,
+    "2026-11-12": 90080,
+    "2026-11-11": 29087,
+    "2026-11-10": 1
+  },
+  "countryNames": {
+    "AL": "Albania",
+    "AU": "Australia",
+    "CM": "Cameroon",
+    "DJ": "Djibouti",
+    "GF": "French Guiana",
+    "GT": "Guatemala",
+    "IE": "Ireland",
+    "LS": "Lesotho",
+    "NI": "Nicaragua",
+    "NR": "Nauru",
+    "PW": "Palau",
+    "SB": "Solomon Islands",
+    "SK": "Slovakia",
+    "SY": "Syria",
+    "TN": "Tunisia",
+    "PR": "Puerto Rico",
+    "SG": "Singapore",
+    "LT": "Lithuania",
+    "KZ": "Kazakhstan",
+    "TC": "Turks and Caicos Islands",
+    "PY": "Paraguay",
+    "TZ": "Tanzania",
+    "DM": "Dominica",
+    "KH": "Cambodia",
+    "BF": "Burkina Faso",
+    "GA": "Gabon",
+    "RS": "Serbia",
+    "EU": "European Union",
+    "GB": "United Kingdom",
+    "SE": "Sweden",
+    "US": "United States",
+    "BR": "Brazil",
+    "CA": "Canada",
+    "CN": "China",
+    "TW": "Taiwan",
+    "HK": "Hong Kong",
+    "NZ": "New Zealand",
+    "DE": "Germany",
+    "NL": "Netherlands",
+    "CH": "Switzerland",
+    "PH": "Philippines",
+    "AT": "Austria",
+    "RU": "Russia",
+    "ZA": "South Africa",
+    "ID": "Indonesia",
+    "FR": "France",
+    "GR": "Greece",
+    "AG": "Antigua and Barbuda",
+    "PA": "Panama",
+    "ES": "Spain",
+    "NO": "Norway",
+    "IT": "Italy",
+    "CL": "Chile",
+    "IN": "India",
+    "JP": "Japan",
+    "CZ": "Czechia",
+    "KR": "South Korea",
+    "CO": "Colombia",
+    "TR": "Turkiye",
+    "CR": "Costa Rica",
+    "VE": "Venezuela",
+    "PT": "Portugal",
+    "DK": "Denmark",
+    "FI": "Finland",
+    "KE": "Kenya",
+    "LU": "Luxembourg",
+    "TH": "Thailand",
+    "SA": "Saudi Arabia",
+    "UA": "Ukraine",
+    "AS": "American Samoa",
+    "BG": "Bulgaria",
+    "MY": "Malaysia",
+    "AR": "Argentina",
+    "BZ": "Belize",
+    "HU": "Hungary",
+    "HR": "Croatia",
+    "PL": "Poland",
+    "JM": "Jamaica",
+    "EC": "Ecuador",
+    "BN": "Brunei Darussalam",
+    "MX": "Mexico",
+    "PE": "Peru",
+    "IL": "Israel",
+    "IS": "Iceland",
+    "BE": "Belgium",
+    "SI": "Slovenia",
+    "UZ": "Uzbekistan",
+    "ET": "Ethiopia",
+    "YE": "Yemen",
+    "SS": "South Sudan",
+    "GL": "Greenland",
+    "IR": "Iran",
+    "MA": "Morocco",
+    "NG": "Nigeria",
+    "MD": "Moldova",
+    "VG": "Virgin Islands, British",
+    "GE": "Georgia",
+    "GH": "Ghana",
+    "HT": "Haiti",
+    "ZW": "Zimbabwe",
+    "BD": "Bangladesh",
+    "MZ": "Mozambique",
+    "IQ": "Iraq",
+    "LC": "Saint Lucia",
+    "TO": "Tonga",
+    "AD": "Andorra",
+    "BJ": "Benin",
+    "LR": "Liberia",
+    "MP": "Northern Mariana Islands",
+    "PF": "French Polynesia",
+    "SZ": "Eswatini",
+    "NP": "Nepal",
+    "KW": "Kuwait",
+    "AX": "Åland Islands",
+    "MS": "Montserrat",
+    "VA": "Vatican City",
+    "WF": "Wallis and Futuna",
+    "PN": "Pitcairn",
+    "UM": "United States Minor Outlying Islands",
+    "CG": "Republic of the Congo",
+    "KI": "Kiribati",
+    "QA": "Qatar",
+    "MK": "North Macedonia",
+    "EE": "Estonia",
+    "MM": "Myanmar",
+    "BI": "Burundi",
+    "LV": "Latvia",
+    "UG": "Uganda",
+    "EG": "Egypt",
+    "VN": "Vietnam",
+    "SV": "El Salvador",
+    "TT": "Trinidad and Tobago",
+    "TV": "Tuvalu",
+    "SR": "Suriname",
+    "HN": "Honduras",
+    "AM": "Armenia",
+    "RO": "Romania",
+    "FO": "Faroe Islands",
+    "UY": "Uruguay",
+    "IO": "British Indian Ocean Territory",
+    "TG": "Togo",
+    "LA": "Laos",
+    "MV": "Maldives",
+    "NC": "New Caledonia",
+    "DO": "Dominican Republic",
+    "AZ": "Azerbaijan",
+    "PK": "Pakistan",
+    "KG": "Kyrgyzstan",
+    "AI": "Anguilla",
+    "GG": "Guernsey",
+    "KY": "Cayman Islands",
+    "SC": "Seychelles",
+    "FM": "Micronesia",
+    "AE": "United Arab Emirates",
+    "ME": "Montenegro",
+    "MT": "Malta",
+    "BO": "Bolivia",
+    "FJ": "Fiji",
+    "WS": "Samoa",
+    "ZM": "Zambia",
+    "GN": "Guinea",
+    "PG": "Papua New Guinea",
+    "GY": "Guyana",
+    "GW": "Guinea-Bissau",
+    "SO": "Somalia",
+    "TJ": "Tajikistan",
+    "VI": "Virgin Islands, U.S.",
+    "OM": "Oman",
+    "BA": "Bosnia and Herzegovina",
+    "SN": "Senegal",
+    "MW": "Malawi",
+    "BH": "Bahrain",
+    "LY": "Libya",
+    "RE": "Réunion",
+    "BT": "Bhutan",
+    "MN": "Mongolia",
+    "JE": "Jersey",
+    "MQ": "Martinique",
+    "MC": "Monaco",
+    "NF": "Norfolk Island",
+    "SD": "Sudan",
+    "DZ": "Algeria",
+    "BB": "Barbados",
+    "CU": "Cuba",
+    "NA": "Namibia",
+    "FK": "Falkland Islands (Malvinas)",
+    "NE": "Niger",
+    "BM": "Bermuda",
+    "RW": "Rwanda",
+    "CV": "Cabo Verde",
+    "GD": "Grenada",
+    "AW": "Aruba",
+    "BW": "Botswana",
+    "SL": "Sierra Leone",
+    "KM": "Comoros",
+    "ER": "Eritrea",
+    "KN": "Saint Kitts and Nevis",
+    "SM": "San Marino",
+    "TL": "Timor-Leste",
+    "AF": "Afghanistan",
+    "LB": "Lebanon",
+    "CX": "Christmas Island",
+    "CW": "Curaçao",
+    "SJ": "Svalbard and Jan Mayen",
+    "GS": "South Georgia and the South Sandwich Islands",
+    "MG": "Madagascar",
+    "LI": "Liechtenstein",
+    "BS": "Bahamas",
+    "PM": "Saint Pierre and Miquelon",
+    "TD": "Chad",
+    "GP": "Guadeloupe",
+    "NU": "Niue",
+    "TK": "Tokelau",
+    "GU": "Guam",
+    "BY": "Belarus",
+    "TM": "Turkmenistan",
+    "CI": "Cote d'Ivoire",
+    "ST": "Sao Tome and Principe",
+    "MU": "Mauritius",
+    "KP": "North Korea",
+    "SH": "Saint Helena, Ascension and Tristan da Cunha",
+    "BL": "Saint Barthélemy",
+    "SX": "Sint Maarten (Dutch part)",
+    "CC": "Cocos (Keeling) Islands",
+    "MR": "Mauritania",
+    "VC": "Saint Vincent and the Grenadines",
+    "GM": "Gambia",
+    "CD": "DR Congo",
+    "GI": "Gibraltar",
+    "TF": "French Southern Territories",
+    "YT": "Mayotte",
+    "MH": "Marshall Islands",
+    "CK": "Cook Islands",
+    "MO": "Macao",
+    "CY": "Cyprus",
+    "AO": "Angola",
+    "IM": "Isle of Man",
+    "MF": "Saint Martin (French part)",
+    "BQ": "Bonaire, Sint Eustatius and Saba",
+    "PS": "Palestine",
+    "JO": "Jordan",
+    "VU": "Vanuatu",
+    "ML": "Mali",
+    "HM": "Heard Island and McDonald Islands",
+    "LK": "Sri Lanka",
+    "CF": "Central African Republic",
+    "AQ": "Antarctica",
+    "GQ": "Equatorial Guinea",
+    "EH": "Western Sahara",
+    "BV": "Bouvet Island"
+  },
+  "leftOutCredential": 1161,
+  "leftOutListing": 0,
+  "left_out_by_reason": {
+    "listing page, not a data call": 0,
+    "credential in the address": 1161,
+    "private or local address": 2,
+    "email-like address": 10,
+    "survey form layer": 29696,
+    "camera or image URL": 11,
+    "stored-login proxy": 0,
+    "class-exercise copy": 49,
+    "editable layer": 273,
+    "police stop records": 0,
+    "form answer layer": 5340,
+    "needs an Indian network location": 18,
+    "leak check match": 0,
+    "coursework layer": 5173,
+    "public input layer": 947,
+    "service name like a class layer or a person": 0,
+    "social network server information": 102904,
+    "repeated address": 1
+  },
+  "leftOutExcluded": 0,
+  "left_out_by_rule": [],
+  "sample_rows": 1000,
+  "focus_rows": 912282,
+  "arcgis_online_rows": 459518,
+  "subcategories": {},
+  "agent_formats": [
+    "json"
+  ],
+  "largestServices": [
+    {
+      "service": "Портал відкритих даних",
+      "display": "Портал відкритих даних",
+      "host": "data.gov.ua",
+      "endpoints": 18171,
+      "agent_ready": 2531,
+      "in_focus": 18171,
+      "country_codes": 1,
+      "formats": [
+        "csv",
+        "json",
+        "xml",
+        "txt",
+        "zip",
+        "geojson"
+      ]
+    },
+    {
+      "service": "Catálogo de datos abiertos del IBESTAT",
+      "display": "Catálogo de datos abiertos del IBESTAT",
+      "host": "intranet.caib.es",
+      "endpoints": 16338,
+      "agent_ready": 16338,
+      "in_focus": 16338,
+      "country_codes": 1,
+      "formats": [
+        "json"
+      ]
+    },
+    {
+      "service": "opendata.schleswig-holstein.de",
+      "display": "opendata.schleswig-holstein.de",
+      "host": "opendata.schleswig-holstein.de",
+      "endpoints": 12400,
+      "agent_ready": 4715,
+      "in_focus": 12400,
+      "country_codes": 1,
+      "formats": [
+        "csv",
+        "json",
+        "txt",
+        "xml"
+      ]
+    },
+    {
+      "service": "Italia Dati municipal dashboards",
+      "display": "Italia Dati municipal dashboards",
+      "host": "cruscotto-italia.dati.gov.it",
+      "endpoints": 8453,
+      "agent_ready": 5377,
+      "in_focus": 8453,
+      "country_codes": 1,
+      "formats": [
+        "json",
+        "geojson",
+        "csv"
+      ]
+    },
+    {
+      "service": "Datos Abiertos Colombia",
+      "display": "Datos Abiertos Colombia",
+      "host": "datos.gov.co",
+      "endpoints": 8092,
+      "agent_ready": 8092,
+      "in_focus": 8092,
+      "country_codes": 1,
+      "formats": [
+        "json"
+      ]
+    },
+    {
+      "service": "www.datos.gov.co",
+      "display": "www.datos.gov.co",
+      "host": "www.datos.gov.co",
+      "endpoints": 7797,
+      "agent_ready": 7797,
+      "in_focus": 7797,
+      "country_codes": 1,
+      "formats": [
+        "json"
+      ]
+    },
+    {
+      "service": "Tycg",
+      "display": "Tycg",
+      "host": "opendata.tycg.gov.tw",
+      "endpoints": 7760,
+      "agent_ready": 3,
+      "in_focus": 7760,
+      "country_codes": 1,
+      "formats": [
+        "csv",
+        "xml",
+        "json"
+      ]
+    },
+    {
+      "service": "Datos Abiertos de Panamá",
+      "display": "Datos Abiertos de Panamá",
+      "host": "www.datosabiertos.gob.pa",
+      "endpoints": 6948,
+      "agent_ready": 2831,
+      "in_focus": 6948,
+      "country_codes": 1,
+      "formats": [
+        "csv",
+        "json",
+        "txt",
+        "zip"
+      ]
+    },
+    {
+      "service": "data.taipei",
+      "display": "data.taipei",
+      "host": "data.taipei",
+      "endpoints": 6219,
+      "agent_ready": 40,
+      "in_focus": 6219,
+      "country_codes": 1,
+      "formats": [
+        "csv",
+        "xml",
+        "json",
+        "geojson",
+        "zip"
+      ]
+    },
+    {
+      "service": "PNDB Open Data",
+      "display": "PNDB Open Data",
+      "host": "pndb.opendatasoft.com",
+      "endpoints": 5788,
+      "agent_ready": 5788,
+      "in_focus": 0,
+      "country_codes": 0,
+      "formats": [
+        "json"
+      ]
+    },
+    {
+      "service": "Proyecto Enlaza - Open Data de la provin",
+      "display": "Proyecto Enlaza - Open Data de la provin",
+      "host": "enlaza.eprinsa.es",
+      "endpoints": 5715,
+      "agent_ready": 1534,
+      "in_focus": 5715,
+      "country_codes": 1,
+      "formats": [
+        "xml",
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "service": "Lombardia",
+      "display": "Lombardia",
+      "host": "www.dati.lombardia.it",
+      "endpoints": 5608,
+      "agent_ready": 3072,
+      "in_focus": 5608,
+      "country_codes": 1,
+      "formats": [
+        "json",
+        "xml",
+        "csv",
+        "geojson"
+      ]
+    },
+    {
+      "service": "Ireland Open Data Portal",
+      "display": "Ireland Open Data Portal",
+      "host": "ws.cso.ie",
+      "endpoints": 5513,
+      "agent_ready": 2753,
+      "in_focus": 5513,
+      "country_codes": 1,
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "service": "Fews",
+      "display": "Fews",
+      "host": "fdw.fews.net",
+      "endpoints": 4821,
+      "agent_ready": 36,
+      "in_focus": 4821,
+      "country_codes": 0,
+      "formats": [
+        "xml",
+        "json",
+        "geojson"
+      ]
+    },
+    {
+      "service": "Moi",
+      "display": "Moi",
+      "host": "opdadm.moi.gov.tw",
+      "endpoints": 4771,
+      "agent_ready": 5,
+      "in_focus": 4771,
+      "country_codes": 1,
+      "formats": [
+        "csv",
+        "zip",
+        "json",
+        "xml"
+      ]
+    },
+    {
+      "service": "Plataforma de Datos Abiertos de la Prefe",
+      "display": "Plataforma de Datos Abiertos de la Prefe",
+      "host": "datosabiertos.carchi.gob.ec",
+      "endpoints": 4709,
+      "agent_ready": 0,
+      "in_focus": 4709,
+      "country_codes": 1,
+      "formats": [
+        "csv",
+        "zip",
+        "txt"
+      ]
+    },
+    {
+      "service": "OpenData Milano",
+      "display": "OpenData Milano",
+      "host": "dati.comune.milano.it",
+      "endpoints": 4639,
+      "agent_ready": 3561,
+      "in_focus": 4639,
+      "country_codes": 1,
+      "formats": [
+        "json",
+        "csv",
+        "geojson",
+        "zip"
+      ]
+    },
+    {
+      "service": "Kabupaten Serang Open Data",
+      "display": "Kabupaten Serang Open Data",
+      "host": "opendata.serangkab.go.id",
+      "endpoints": 4058,
+      "agent_ready": 0,
+      "in_focus": 4058,
+      "country_codes": 1,
+      "formats": [
+        "csv"
+      ]
+    },
+    {
+      "service": "Banque de France Webstat",
+      "display": "Banque de France Webstat",
+      "host": "webstat.banque-france.fr",
+      "endpoints": 3975,
+      "agent_ready": 3975,
+      "in_focus": 3975,
+      "country_codes": 1,
+      "formats": [
+        "json"
+      ]
+    },
+    {
+      "service": "NYC Open Data (Socrata)",
+      "display": "NYC Open Data (Socrata)",
+      "host": "data.cityofnewyork.us",
+      "endpoints": 3868,
+      "agent_ready": 2550,
+      "in_focus": 3868,
+      "country_codes": 1,
+      "formats": [
+        "json",
+        "xml",
+        "csv",
+        "zip",
+        "txt"
+      ]
+    },
+    {
+      "service": "opendata.pref.tokushima.lg.jp",
+      "display": "opendata.pref.tokushima.lg.jp",
+      "host": "opendata.pref.tokushima.lg.jp",
+      "endpoints": 3658,
+      "agent_ready": 3,
+      "in_focus": 3658,
+      "country_codes": 1,
+      "formats": [
+        "csv",
+        "xml",
+        "geojson",
+        "json",
+        "txt"
+      ]
+    },
+    {
+      "service": "Tokyo Open Data CKAN portal",
+      "display": "Tokyo Open Data CKAN portal",
+      "host": "www.opendata.metro.tokyo.lg.jp",
+      "endpoints": 3476,
+      "agent_ready": 3,
+      "in_focus": 3476,
+      "country_codes": 1,
+      "formats": [
+        "csv",
+        "geojson",
+        "txt",
+        "json",
+        "zip",
+        "xml"
+      ]
+    },
+    {
+      "service": "Tokyo Open Data CKAN portal",
+      "display": "Tokyo Open Data CKAN portal",
+      "host": "catalog.data.metro.tokyo.lg.jp",
+      "endpoints": 3473,
+      "agent_ready": 3473,
+      "in_focus": 3473,
+      "country_codes": 1,
+      "formats": [
+        "json"
+      ]
+    },
+    {
+      "service": "tabular-api.data.gouv.fr",
+      "display": "tabular-api.data.gouv.fr",
+      "host": "tabular-api.data.gouv.fr",
+      "endpoints": 3441,
+      "agent_ready": 3441,
+      "in_focus": 3441,
+      "country_codes": 1,
+      "formats": [
+        "json"
+      ]
+    },
+    {
+      "service": "Open Data Kubu Raya",
+      "display": "Open Data Kubu Raya",
+      "host": "satudata.kuburayakab.go.id",
+      "endpoints": 3423,
+      "agent_ready": 2716,
+      "in_focus": 3423,
+      "country_codes": 1,
+      "formats": [
+        "json",
+        "csv"
+      ]
+    }
+  ],
+  "bannerGroups": [
+    {
+      "label": "US",
+      "n": 457556,
+      "agent": 439741
+    },
+    {
+      "label": "JP",
+      "n": 61130,
+      "agent": 18389
+    },
+    {
+      "label": "GB",
+      "n": 59873,
+      "agent": 40965
+    },
+    {
+      "label": "TW",
+      "n": 56160,
+      "agent": 9814
+    },
+    {
+      "label": "DE",
+      "n": 54274,
+      "agent": 35895
+    },
+    {
+      "label": "IT",
+      "n": 52634,
+      "agent": 25745
+    }
+  ],
+  "focus_text": "NOT (title matches /^HDX: /i OR host in (pndb.opendatasoft.com, datasource.kapsarc.org)) AND (NOT url matches ///(services[0-9]*(-[a-z0-9]+)?|utility)\\.arcgis\\.com//i OR title matches /\\b(city|town|county|municipal|borough|village|township|council|ward|district|parish|state|department|public|school|park|zoning|parcel|librar|fire|police|sidewalk|trail|bridge|evacuation|permit|street|road|hydrant|polling|precinct|boundar)/i)",
+  "buckets": [
+    {
+      "id": "agent",
+      "emoji": "🤖",
+      "name": "Agent tools",
+      "title": "City and national portal records an agent can query (Socrata, Opendatasoft, CKAN)",
+      "build": "Wrap one portal as a get_city_records tool: pass the dataset id and a filter ($where on Socrata, where on Opendatasoft, q on CKAN), return the matching records with a timeout.",
+      "filter": {
+        "and": [
+          {
+            "tag": "agent-ready"
+          },
+          {
+            "subcategoryMatches": "^((socrata|opendatasoft|ckan) dataset|OpenDataSoft network)$"
+          }
+        ]
+      },
+      "filter_text": "tags has agent-ready AND subcategory matches /^((socrata|opendatasoft|ckan) dataset|OpenDataSoft network)$/i",
+      "fallback": false,
+      "notes": [
+        {
+          "count": 111574,
+          "text": "ask for one record (`limit=1` or `$limit=1`); raise the limit or add a filter for more."
+        }
+      ],
+      "count": 120356,
+      "services_matching": 1200,
+      "country_codes_matching": 78,
+      "formats_matching": 1,
+      "example": {
+        "url": "https://datos.gov.co/resource/226x-qjxq.json?$limit=1",
+        "title": "Estadistica UNDMO",
+        "service": "Datos Abiertos Colombia",
+        "last_tested": "2026-11-12"
+      },
+      "recommended": {
+        "criteria": "Services in this pack with the most endpoints that match this bucket and are tagged `agent-ready` (no key sent in the test call, JSON body, passed a data call). Ties go to the service with more country codes, then by name. Only services with at least one bucket row that matches the focus rule are listed, and the sample comes from those rows; the counts cover the whole bucket. The sample URL is the first row by URL sort after preferring, in this order: rows that match the bucket's sample preference when it has one, rows that return values rather than describe a dataset or a service (not ERDDAP /info/ pages, OGC GetCapabilities requests, bare OWS addresses, PxWeb tables, UN SDG series lists, Statistics Canada download pointers, WorldPop listings, GTFS validation reports, untitled rows or service root addresses), and agent-ready rows. Sample preference in this bucket: `title matches /\\S\\s+\\S/i`. Services named \"ArcGIS organization\" hold map layers from many owners and are added only when fewer than 5 other services match.",
+        "available": 1196,
+        "services": [
+          {
+            "service": "Datos Abiertos Colombia",
+            "display": "Datos Abiertos Colombia",
+            "host": "datos.gov.co",
+            "endpoints_in_bucket": 8092,
+            "endpoints_in_pack": 8092,
+            "country_codes": [
+              "CO"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 1,
+            "sample_url": "https://datos.gov.co/resource/226x-qjxq.json?$limit=1",
+            "sample_title": "Estadistica UNDMO",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-12"
+          },
+          {
+            "service": "Banque de France Webstat",
+            "display": "Banque de France Webstat",
+            "host": "webstat.banque-france.fr",
+            "endpoints_in_bucket": 3975,
+            "endpoints_in_pack": 3975,
+            "country_codes": [
+              "FR"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 1,
+            "sample_url": "https://webstat.banque-france.fr/api/explore/v2.1/catalog/datasets/acpr-a-bq-activite-tb_fin_comp_coeff_expl7406-456-_z-_z-phnc-_z-top6_aut_groupes/records?limit=1",
+            "sample_title": "Amortissements des immeubles de placement",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-13"
+          },
+          {
+            "service": "NYC Open Data (Socrata)",
+            "display": "NYC Open Data (Socrata)",
+            "host": "data.cityofnewyork.us",
+            "endpoints_in_bucket": 1682,
+            "endpoints_in_pack": 3868,
+            "country_codes": [
+              "US"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 5,
+            "sample_url": "https://data.cityofnewyork.us/resource/242c-ru4i.json?$limit=1",
+            "sample_title": "DSNY Special Waste Drop-off Sites",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-11"
+          },
+          {
+            "service": "Rotterdam",
+            "display": "Rotterdam",
+            "host": "data.rotterdam.nl",
+            "endpoints_in_bucket": 1432,
+            "endpoints_in_pack": 1432,
+            "country_codes": [
+              "NL"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 1,
+            "sample_url": "https://data.rotterdam.nl/api/explore/v2.1/catalog/datasets/aandeel_algemeen/records?limit=1",
+            "sample_title": "Aandeel algemeen",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-12"
+          },
+          {
+            "service": "Digital Wallonia",
+            "display": "Digital Wallonia",
+            "host": "digitalwallonia.opendatasoft.com",
+            "endpoints_in_bucket": 1152,
+            "endpoints_in_pack": 1152,
+            "country_codes": [
+              "BE"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 1,
+            "sample_url": "https://digitalwallonia.opendatasoft.com/api/explore/v2.1/catalog/datasets/029-ores-electricite-et-gaz-taux-de-communicabilite-des-compteurs-smart/records?limit=1",
+            "sample_title": "029-ores-electricite-et-gaz-taux-de-communicabilite-des-compteurs-smart",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-12"
+          },
+          {
+            "service": "Bayareametro",
+            "display": "Bayareametro",
+            "host": "data.bayareametro.gov",
+            "endpoints_in_bucket": 1037,
+            "endpoints_in_pack": 1056,
+            "country_codes": [
+              "US"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 1,
+            "sample_url": "https://data.bayareametro.gov/resource/234v-3byw.json?$limit=1",
+            "sample_title": "(Block Group) Number of Renter Buildings that are 1-4 Units",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-11"
+          },
+          {
+            "service": "data.wa.gov",
+            "display": "data.wa.gov",
+            "host": "data.wa.gov",
+            "endpoints_in_bucket": 1013,
+            "endpoints_in_pack": 2161,
+            "country_codes": [
+              "US"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 4,
+            "sample_url": "https://data.wa.gov/resource/229f-7afc.json?$limit=1",
+            "sample_title": "Report Card Teacher Qualification by School Title I Served Status School Years 2021-22 to 2024-25",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-12"
+          },
+          {
+            "service": "Iledefrance",
+            "display": "Iledefrance",
+            "host": "opendata.iledefrance.fr",
+            "endpoints_in_bucket": 1006,
+            "endpoints_in_pack": 1006,
+            "country_codes": [
+              "FR"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 1,
+            "sample_url": "https://opendata.iledefrance.fr/api/explore/v2.1/catalog/datasets/100-sites-sportifs-emblematiques/records?limit=1",
+            "sample_title": "100-sites-sportifs-emblematiques",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-12"
+          }
+        ]
+      }
+    },
+    {
+      "id": "app",
+      "emoji": "📱",
+      "name": "App features",
+      "title": "Schools, parks, libraries, zoning and public-safety layers for city maps",
+      "build": "Show the schools, parks, libraries or fire and police stations near an address on a map card; each layer query returns features with names and attributes.",
+      "filter": {
+        "subcategoryMatches": "^ArcGIS feature layer · (schools|parks|libraries|fire stations|police stations|zoning|trails|sidewalks|evacuation)$"
+      },
+      "filter_text": "subcategory matches /^ArcGIS feature layer · (schools|parks|libraries|fire stations|police stations|zoning|trails|sidewalks|evacuation)$/i",
+      "fallback": false,
+      "notes": [],
+      "count": 27403,
+      "services_matching": 6928,
+      "country_codes_matching": 68,
+      "formats_matching": 1,
+      "example": {
+        "url": "https://location.cabarruscounty.us/arcgisservices/rest/services/OpenData/Cabarrus_County_Zoning/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+        "title": "Cabarrus County Zoning",
+        "service": "Cabarruscounty",
+        "last_tested": "2026-11-14"
+      },
+      "recommended": {
+        "criteria": "Services in this pack with the most endpoints that match this bucket and passed a data call. Ties go to the service with more country codes, then by name. Only services with at least one bucket row that matches the focus rule are listed, and the sample comes from those rows; the counts cover the whole bucket. The sample URL is the first row by URL sort after preferring, in this order: rows that match the bucket's sample preference when it has one, rows that return values rather than describe a dataset or a service (not ERDDAP /info/ pages, OGC GetCapabilities requests, bare OWS addresses, PxWeb tables, UN SDG series lists, Statistics Canada download pointers, WorldPop listings, GTFS validation reports, untitled rows or service root addresses), and agent-ready rows. Sample preference in this bucket: `NOT url matches ///(services[0-9]*(-[a-z0-9]+)?|utility)\\.arcgis\\.com//i`. Services named \"ArcGIS organization\" hold map layers from many owners and are added only when fewer than 5 other services match.",
+        "available": 5814,
+        "services": [
+          {
+            "service": "University of Calgary (ArcGIS Online)",
+            "display": "University of Calgary (ArcGIS Online)",
+            "host": "services2.arcgis.com",
+            "endpoints_in_bucket": 344,
+            "endpoints_in_pack": 459,
+            "country_codes": [
+              "CA",
+              "ES",
+              "GB",
+              "KR",
+              "MX",
+              "TW",
+              "US"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 1,
+            "sample_url": "https://services2.arcgis.com/XSv3KNGfmrd1txPN/arcgis/rest/services/15%20min%20walking%20distance%20to%20library/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+            "sample_title": "15 min walking distance to library",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-14"
+          },
+          {
+            "service": "Clemson University (ArcGIS Online)",
+            "display": "Clemson University (ArcGIS Online)",
+            "host": "services1.arcgis.com",
+            "endpoints_in_bucket": 217,
+            "endpoints_in_pack": 1588,
+            "country_codes": [
+              "CN",
+              "GB",
+              "KE",
+              "US"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 1,
+            "sample_url": "https://services1.arcgis.com/x5wCko8UnSi4h0CB/arcgis/rest/services/AllLabels_NoCooperLibrary_WFL1/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+            "sample_title": "All Labels No Cooper Library",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-14"
+          },
+          {
+            "service": "University of Nevada, Reno (ArcGIS Online)",
+            "display": "University of Nevada, Reno (ArcGIS Online)",
+            "host": "services3.arcgis.com",
+            "endpoints_in_bucket": 170,
+            "endpoints_in_pack": 528,
+            "country_codes": [
+              "FR",
+              "US"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 1,
+            "sample_url": "https://services3.arcgis.com/QCH1Le0vwRIyplqB/arcgis/rest/services/2024trails_start_end/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+            "sample_title": "2024 Trails_4",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-14"
+          },
+          {
+            "service": "University of Minnesota (ArcGIS Online)",
+            "display": "University of Minnesota (ArcGIS Online)",
+            "host": "services.arcgis.com",
+            "endpoints_in_bucket": 119,
+            "endpoints_in_pack": 1539,
+            "country_codes": [
+              "ES",
+              "US"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 1,
+            "sample_url": "https://services.arcgis.com/8df8p0NlLFEShl0r/arcgis/rest/services/1950_Zoning/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+            "sample_title": "1950 Zoning",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-14"
+          },
+          {
+            "service": "University of Utah Reasearch/Education (ArcGIS Online)",
+            "display": "University of Utah Reasearch/Education (ArcGIS Online)",
+            "host": "services1.arcgis.com",
+            "endpoints_in_bucket": 109,
+            "endpoints_in_pack": 202,
+            "country_codes": [
+              "CA",
+              "US"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 1,
+            "sample_url": "https://services1.arcgis.com/2exN3kG1f2h7coIQ/arcgis/rest/services/Animal%20Locations%20On%20Trails/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+            "sample_title": "Animal Locations On Trails",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-14"
+          },
+          {
+            "service": "GIS Online at UCLA (ArcGIS Online)",
+            "display": "GIS Online at UCLA (ArcGIS Online)",
+            "host": "services7.arcgis.com",
+            "endpoints_in_bucket": 101,
+            "endpoints_in_pack": 982,
+            "country_codes": [
+              "US"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 1,
+            "sample_url": "https://services7.arcgis.com/2hYXmwteFLemN5bW/arcgis/rest/services/2017_Formal_County_Parks/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+            "sample_title": "Formal County Parks",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-14"
+          },
+          {
+            "service": "University of Arizona GIS (ArcGIS Online)",
+            "display": "University of Arizona GIS (ArcGIS Online)",
+            "host": "services1.arcgis.com",
+            "endpoints_in_bucket": 96,
+            "endpoints_in_pack": 819,
+            "country_codes": [
+              "GB",
+              "TR",
+              "US"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 1,
+            "sample_url": "https://services1.arcgis.com/Ezk9fcjSUkeadg6u/arcgis/rest/services/A3_DR_Parks/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+            "sample_title": "A3 DR Parks",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-14"
+          },
+          {
+            "service": "University of Maryland (ArcGIS Online)",
+            "display": "University of Maryland (ArcGIS Online)",
+            "host": "services1.arcgis.com",
+            "endpoints_in_bucket": 92,
+            "endpoints_in_pack": 428,
+            "country_codes": [
+              "US"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 1,
+            "sample_url": "https://services1.arcgis.com/qTQ6qYkHpxlu0G82/arcgis/rest/services/Camp_Springs_Schools/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+            "sample_title": "Camp Springs Schools",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-14"
+          }
+        ]
+      }
+    },
+    {
+      "id": "grounding",
+      "emoji": "🧠",
+      "name": "Grounding and data pipelines",
+      "title": "Municipal, regional and national files (CSV, XML, ZIP) for scheduled loads",
+      "build": "Load municipal and national files on a schedule into your own store, keeping the portal and dataset id, so answers about a city cite a dated public record.",
+      "filter": {
+        "format": [
+          "csv",
+          "xml",
+          "zip",
+          "txt"
+        ]
+      },
+      "filter_text": "format in (csv, xml, zip, txt)",
+      "fallback": false,
+      "notes": [],
+      "count": 311011,
+      "services_matching": 3600,
+      "country_codes_matching": 246,
+      "formats_matching": 4,
+      "example": {
+        "url": "https://data.gov.ua/dataset/000e2494-3d5a-4187-b17b-06cc3ed398c3/resource/b34fe93f-6808-486c-b7be-ba4eeb7f3bf1/download/line.csv",
+        "title": "Дані обліку громадян, які потребують поліпшення житлових умов (квартирний облік) Бобровицької міської ради - line.csv",
+        "service": "Портал відкритих даних",
+        "last_tested": "2026-11-15"
+      },
+      "recommended": {
+        "criteria": "Services in this pack with the most endpoints that match this bucket and passed a data call. Ties go to the service with more country codes, then by name. Only services with at least one bucket row that matches the focus rule are listed, and the sample comes from those rows; the counts cover the whole bucket. The sample URL is the first row by URL sort after preferring, in this order: rows that match the bucket's sample preference when it has one, rows that return values rather than describe a dataset or a service (not ERDDAP /info/ pages, OGC GetCapabilities requests, bare OWS addresses, PxWeb tables, UN SDG series lists, Statistics Canada download pointers, WorldPop listings, GTFS validation reports, untitled rows or service root addresses), and agent-ready rows. Sample preference in this bucket: `format is csv AND title matches /\\S\\s+\\S/i AND NOT url matches /\\.(xls|xlsx|gz)$/i`. Services named \"ArcGIS organization\" hold map layers from many owners and are added only when fewer than 5 other services match.",
+        "available": 3598,
+        "services": [
+          {
+            "service": "Портал відкритих даних",
+            "display": "Портал відкритих даних",
+            "host": "data.gov.ua",
+            "endpoints_in_bucket": 15635,
+            "endpoints_in_pack": 18171,
+            "country_codes": [
+              "UA"
+            ],
+            "formats": [
+              "csv",
+              "xml",
+              "txt",
+              "zip"
+            ],
+            "formats_in_pack": 6,
+            "sample_url": "https://data.gov.ua/dataset/000e2494-3d5a-4187-b17b-06cc3ed398c3/resource/b34fe93f-6808-486c-b7be-ba4eeb7f3bf1/download/line.csv",
+            "sample_title": "Дані обліку громадян, які потребують поліпшення житлових умов (квартирний облік) Бобровицької міської ради - line.csv",
+            "sample_format": "csv",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "Tycg",
+            "display": "Tycg",
+            "host": "opendata.tycg.gov.tw",
+            "endpoints_in_bucket": 7757,
+            "endpoints_in_pack": 7760,
+            "country_codes": [
+              "TW"
+            ],
+            "formats": [
+              "csv",
+              "xml"
+            ],
+            "formats_in_pack": 3,
+            "sample_url": "https://opendata.tycg.gov.tw/api/dataset/00127afa-b020-43f9-9ae0-256ca1254c80/resource/1a717396-e378-4ea5-8921-e64271faa60c/download",
+            "sample_title": "桃園市政府工務局: data.gov.tw dataset resource (CSV)",
+            "sample_format": "csv",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "opendata.schleswig-holstein.de",
+            "display": "opendata.schleswig-holstein.de",
+            "host": "opendata.schleswig-holstein.de",
+            "endpoints_in_bucket": 7685,
+            "endpoints_in_pack": 12400,
+            "country_codes": [
+              "DE"
+            ],
+            "formats": [
+              "csv",
+              "txt",
+              "xml"
+            ],
+            "formats_in_pack": 4,
+            "sample_url": "https://opendata.schleswig-holstein.de/data/antikensammlung/Metadaten%20(Zuordnung).csv",
+            "sample_title": "TransformingAntiquity - Metadaten (Zuordnung)",
+            "sample_format": "csv",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "data.taipei",
+            "display": "data.taipei",
+            "host": "data.taipei",
+            "endpoints_in_bucket": 6145,
+            "endpoints_in_pack": 6219,
+            "country_codes": [
+              "TW"
+            ],
+            "formats": [
+              "csv",
+              "xml",
+              "zip"
+            ],
+            "formats_in_pack": 5,
+            "sample_url": "https://data.taipei/api/dataset/0016a730-aef1-43c5-baaf-0f08e270c0f6/resource/98fce0a1-66f9-4b10-b384-1e80a7999e27/download",
+            "sample_title": "臺北市政府工務局水利工程處: data.gov.tw dataset resource (CSV)",
+            "sample_format": "csv",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "Fews",
+            "display": "Fews",
+            "host": "fdw.fews.net",
+            "endpoints_in_bucket": 4774,
+            "endpoints_in_pack": 4821,
+            "country_codes": [],
+            "formats": [
+              "xml"
+            ],
+            "formats_in_pack": 3,
+            "sample_url": "https://fdw.fews.net/api/ipcphasemap/country/AF/CS/2011-01-01.kml",
+            "sample_title": "Afghanistan: Acute Food Insecurity Classification (January 2011 - June 2011) - Current Situation: January 2011 (.kml)",
+            "sample_format": "xml",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "Moi",
+            "display": "Moi",
+            "host": "opdadm.moi.gov.tw",
+            "endpoints_in_bucket": 4766,
+            "endpoints_in_pack": 4771,
+            "country_codes": [
+              "TW"
+            ],
+            "formats": [
+              "csv",
+              "zip",
+              "xml"
+            ],
+            "formats_in_pack": 4,
+            "sample_url": "https://opdadm.moi.gov.tw/api/v1/no-auth/resource/api/dataset/0073DC43-6EDE-4A94-8A0B-56F3521CFCAB/resource/054E4275-C3B6-4E7E-9B45-AC5598BB9E8F/download",
+            "sample_title": "戶政司: data.gov.tw dataset resource (CSV)",
+            "sample_format": "csv",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "Plataforma de Datos Abiertos de la Prefe",
+            "display": "Plataforma de Datos Abiertos de la Prefe",
+            "host": "datosabiertos.carchi.gob.ec",
+            "endpoints_in_bucket": 4709,
+            "endpoints_in_pack": 4709,
+            "country_codes": [
+              "EC"
+            ],
+            "formats": [
+              "csv",
+              "zip",
+              "txt"
+            ],
+            "formats_in_pack": 3,
+            "sample_url": "https://datosabiertos.carchi.gob.ec/dataset/0057f381-fdbc-4747-8a64-51bcf439e921/resource/7363b3a1-0414-4491-b8cd-e3ccc4da099c/download/2025-Abril-Art.-29-Informacion-Publica-Empresas-Publicas-292conjuntodedatos.csv.csv",
+            "sample_title": "29.2 Informacion Publica Empresas Publicas obligación específica abril del 2025 - 29.2. CONJUNTO DE DATOS",
+            "sample_format": "csv",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "Proyecto Enlaza - Open Data de la provin",
+            "display": "Proyecto Enlaza - Open Data de la provin",
+            "host": "enlaza.eprinsa.es",
+            "endpoints_in_bucket": 4181,
+            "endpoints_in_pack": 5715,
+            "country_codes": [
+              "ES"
+            ],
+            "formats": [
+              "xml",
+              "csv"
+            ],
+            "formats_in_pack": 3,
+            "sample_url": "https://enlaza.eprinsa.es/file/datahub/0051aeda-69e8-40c2-9e83-3385aa73e57a.csv",
+            "sample_title": "Adjudicatarios de obras",
+            "sample_format": "csv",
+            "sample_last_tested": "2026-11-15"
+          }
+        ]
+      }
+    },
+    {
+      "id": "evals",
+      "emoji": "🧪",
+      "name": "Evals and testing",
+      "title": "Portal records, layers and files to test a civic-data tool",
+      "build": "Run your civic-data tool against a fixed set of URLs across portals and formats; check that records, fields and dates parse, and keep last_tested as the baseline for your own re-tests.",
+      "filter": {
+        "whole": true
+      },
+      "filter_text": "the whole pack",
+      "fallback": false,
+      "notes": [],
+      "count": 1329192,
+      "services_matching": 57593,
+      "country_codes_matching": 250,
+      "formats_matching": 6,
+      "example": {
+        "url": "https://data.gov.ua/dataset/018609e2-ffe8-44ff-bf36-132fa802895e/resource/20013b47-3c04-4960-9c9d-812c28bdc5ea/download/37577078_35_4382904.json",
+        "title": "Звіти про використання бюджетних коштів КСП \"Інженерні мережі\" - 37577078_35_4382904",
+        "service": "Портал відкритих даних",
+        "last_tested": "2026-11-15"
+      },
+      "recommended": {
+        "criteria": "Services in this pack that returned the most different formats, then the most endpoints that passed a data call, then by name: a mix of response shapes to test parsers and tool calls. Only services with at least one bucket row that matches the focus rule are listed, and the sample comes from those rows; the counts cover the whole bucket. The sample URL is the first row by URL sort after preferring, in this order: rows that match the bucket's sample preference when it has one, rows that return values rather than describe a dataset or a service (not ERDDAP /info/ pages, OGC GetCapabilities requests, bare OWS addresses, PxWeb tables, UN SDG series lists, Statistics Canada download pointers, WorldPop listings, GTFS validation reports, untitled rows or service root addresses), and agent-ready rows. Sample preference in this bucket: `title matches /\\S\\s+\\S/i`. Services named \"ArcGIS organization\" hold map layers from many owners and are added only when fewer than 5 other services match.",
+        "available": 41505,
+        "services": [
+          {
+            "service": "Портал відкритих даних",
+            "display": "Портал відкритих даних",
+            "host": "data.gov.ua",
+            "endpoints_in_bucket": 18171,
+            "endpoints_in_pack": 18171,
+            "country_codes": [
+              "UA"
+            ],
+            "formats": [
+              "csv",
+              "json",
+              "xml",
+              "txt",
+              "zip",
+              "geojson"
+            ],
+            "formats_in_pack": 6,
+            "sample_url": "https://data.gov.ua/dataset/018609e2-ffe8-44ff-bf36-132fa802895e/resource/20013b47-3c04-4960-9c9d-812c28bdc5ea/download/37577078_35_4382904.json",
+            "sample_title": "Звіти про використання бюджетних коштів КСП \"Інженерні мережі\" - 37577078_35_4382904",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "Tokyo Open Data CKAN portal",
+            "display": "Tokyo Open Data CKAN portal",
+            "host": "www.opendata.metro.tokyo.lg.jp",
+            "endpoints_in_bucket": 3476,
+            "endpoints_in_pack": 3476,
+            "country_codes": [
+              "JP"
+            ],
+            "formats": [
+              "csv",
+              "geojson",
+              "txt",
+              "json",
+              "zip",
+              "xml"
+            ],
+            "formats_in_pack": 6,
+            "sample_url": "https://www.opendata.metro.tokyo.lg.jp/shinagawa/h21ryokuhibunpu.geojson",
+            "sample_title": "H21緑被分布 - H21緑被分布情報(geojson形式)",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "Greece National Data Portal",
+            "display": "Greece National Data Portal",
+            "host": "data.gov.gr",
+            "endpoints_in_bucket": 2345,
+            "endpoints_in_pack": 2345,
+            "country_codes": [
+              "GR"
+            ],
+            "formats": [
+              "json",
+              "csv",
+              "xml",
+              "geojson",
+              "txt",
+              "zip"
+            ],
+            "formats_in_pack": 6,
+            "sample_url": "https://data.gov.gr/api/3/action/datastore_search?resource_id=004f8882-bd32-4e80-a0a6-9fc91a76e396&limit=1",
+            "sample_title": "Απασχόληση και Αγορά Εργασίας Δήμου Πατρέων - Απασχολούμενος πληθυσμός ανά υπηκοότητα και κατάσταση απασχόλησης (Δήμος Πατρέων, 2021)",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "datamillnorth.org",
+            "display": "datamillnorth.org",
+            "host": "datamillnorth.org",
+            "endpoints_in_bucket": 1301,
+            "endpoints_in_pack": 1301,
+            "country_codes": [
+              "GB"
+            ],
+            "formats": [
+              "csv",
+              "xml",
+              "geojson",
+              "json",
+              "txt",
+              "zip"
+            ],
+            "formats_in_pack": 6,
+            "sample_url": "https://datamillnorth.org/download/29r6j/4c170c50-09d0-4f14-8725-3477f0310d5c/Community%20with%20postcodes%20Apr_2020-with-coordinates.geojson",
+            "sample_title": "Community services - April 2020",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "Datos Abiertos Bogotá",
+            "display": "Datos Abiertos Bogotá",
+            "host": "datosabiertos.bogota.gov.co",
+            "endpoints_in_bucket": 787,
+            "endpoints_in_pack": 787,
+            "country_codes": [
+              "CO"
+            ],
+            "formats": [
+              "json",
+              "csv",
+              "geojson",
+              "xml",
+              "txt",
+              "zip"
+            ],
+            "formats_in_pack": 6,
+            "sample_url": "https://datosabiertos.bogota.gov.co/api/3/action/datastore_search?resource_id=01f8241b-3cf5-4166-98ea-a60ddc36d402&limit=1",
+            "sample_title": "Ejecución Presupuestal",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-12"
+          },
+          {
+            "service": "Public",
+            "display": "Public",
+            "host": "download.data.public.lu",
+            "endpoints_in_bucket": 314,
+            "endpoints_in_pack": 314,
+            "country_codes": [
+              "LU"
+            ],
+            "formats": [
+              "json",
+              "zip",
+              "xml",
+              "geojson",
+              "csv",
+              "txt"
+            ],
+            "formats_in_pack": 6,
+            "sample_url": "https://download.data.public.lu/resources/administrative-entities-2018/20200325-152406/administrative-entities-2018-1808-vg-vfg-vfs-gks-rlp-2018-3.geojson",
+            "sample_title": "SIG-GR @ Ministère du Logement et de l'Aménagement du territoire - Département de l’aménagement du territoire: Administrative entities 2018 / administrative-entities-2018-1808-vg-vfg-vfs-gks-rlp-2018-3.geojson",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "Dublinked Open Data for the Dublin Regio",
+            "display": "Dublinked Open Data for the Dublin Regio",
+            "host": "data.smartdublin.ie",
+            "endpoints_in_bucket": 123,
+            "endpoints_in_pack": 123,
+            "country_codes": [
+              "IE"
+            ],
+            "formats": [
+              "csv",
+              "json",
+              "geojson",
+              "xml",
+              "zip",
+              "txt"
+            ],
+            "formats_in_pack": 6,
+            "sample_url": "https://data.smartdublin.ie/dataset/02e4b256-e517-4bf3-b719-4f53bed64765/resource/8fa299dd-faae-4468-b578-f52eb0c03033/download/burialgrounds_dlr.geojson",
+            "sample_title": "Burial Grounds DLR",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-13"
+          },
+          {
+            "service": "data.taipei",
+            "display": "data.taipei",
+            "host": "data.taipei",
+            "endpoints_in_bucket": 6219,
+            "endpoints_in_pack": 6219,
+            "country_codes": [
+              "TW"
+            ],
+            "formats": [
+              "csv",
+              "xml",
+              "json",
+              "geojson",
+              "zip"
+            ],
+            "formats_in_pack": 5,
+            "sample_url": "https://data.taipei/api/dataset/03e017d7-674d-4665-b874-5a6a020668e4/resource/7ce99e98-be5e-4332-a2b6-4f0980de82e3/download",
+            "sample_title": "臺北市政府工務局新建工程處: data.gov.tw dataset resource (JSON)",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-15"
+          }
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {
+      "q": "Which public contracts have Colombian agencies signed in SECOP II?",
+      "filter": "url contains \"datos.gov.co/resource/jbjy-vk9h.json\"",
+      "url": "https://datos.gov.co/resource/jbjy-vk9h.json?$limit=1",
+      "title": "SECOP II - Contratos Electrónicos",
+      "service": "Datos Abiertos Colombia",
+      "last_tested": "2026-11-11",
+      "matching": 2
+    },
+    {
+      "q": "What building permits has the City of Chicago issued?",
+      "filter": "url contains \"data.cityofchicago.org/resource/ydr8-5enu.json\"",
+      "url": "https://data.cityofchicago.org/resource/ydr8-5enu.json?$limit=1",
+      "title": "Building Permits",
+      "service": "City of Chicago Data Portal",
+      "last_tested": "2026-11-11",
+      "matching": 1
+    },
+    {
+      "q": "What do the demographic figures of an Italian municipality show?",
+      "filter": "url contains \"cruscotto-italia.dati.gov.it/data/demografia/\"",
+      "url": "https://cruscotto-italia.dati.gov.it/data/demografia/001009.json",
+      "title": "Municipal open data - Andezeno (001009)",
+      "service": "Italia Dati municipal dashboards",
+      "last_tested": "2026-11-14",
+      "matching": 206
+    }
+  ],
+  "preview_focused": true,
+  "preview": [
+    {
+      "title": "Звіти про використання бюджетних коштів КСП \"Інженерні мережі\" - 37577078_35_4382904",
+      "service": "Портал відкритих даних",
+      "country": "UA",
+      "category": "Government & Open Data",
+      "subcategory": "",
+      "format": "json",
+      "tags": "government|open-data|no-key|json|agent-ready",
+      "last_tested": "2026-11-15",
+      "host": "data.gov.ua",
+      "url": "https://data.gov.ua/dataset/018609e2-ffe8-44ff-bf36-132fa802895e/resource/20013b47-3c04-4960-9c9d-812c28bdc5ea/download/37577078_35_4382904.json"
+    },
+    {
+      "title": "urn-siemac-es-caib-ibestat-infomodel-jaxi-dataset-ibestat-vre_21000",
+      "service": "Catálogo de datos abiertos del IBESTAT",
+      "country": "ES",
+      "category": "Government & Open Data",
+      "subcategory": "",
+      "format": "json",
+      "tags": "government|open-data|no-key|json|agent-ready",
+      "last_tested": "2026-11-15",
+      "host": "intranet.caib.es",
+      "url": "https://intranet.caib.es/ibestat-jaxi/tabla.do?typeDownload=6&px=00045648-aa4e-4604-9012-6232cb1f4e94"
+    },
+    {
+      "title": "Gebäude - gemeinden_gebaeude.json",
+      "service": "opendata.schleswig-holstein.de",
+      "country": "DE",
+      "category": "Government & Open Data",
+      "subcategory": "",
+      "format": "json",
+      "tags": "government|open-data|no-key|json|agent-ready",
+      "last_tested": "2026-11-15",
+      "host": "opendata.schleswig-holstein.de",
+      "url": "https://opendata.schleswig-holstein.de/data/nordkirche/gemeinden_gebaeude.json"
+    },
+    {
+      "title": "Municipal open data - Alpignano (001008)",
+      "service": "Italia Dati municipal dashboards",
+      "country": "IT",
+      "category": "Government & Open Data",
+      "subcategory": "",
+      "format": "json",
+      "tags": "government|open-data|no-key|json|agent-ready",
+      "last_tested": "2026-11-14",
+      "host": "cruscotto-italia.dati.gov.it",
+      "url": "https://cruscotto-italia.dati.gov.it/data/agcom_bbmap/001008.json"
+    },
+    {
+      "title": "Estadistica UNDMO",
+      "service": "Datos Abiertos Colombia",
+      "country": "CO",
+      "category": "Government & Open Data",
+      "subcategory": "",
+      "format": "json",
+      "tags": "government|open-data|no-key|json|agent-ready",
+      "last_tested": "2026-11-12",
+      "host": "datos.gov.co",
+      "url": "https://datos.gov.co/resource/226x-qjxq.json?$limit=1"
+    }
+  ],
+  "limits": [
+    {
+      "id": "skew",
+      "text": "34.4% of rows carry country code US; 97,750 rows have no code (global or unknown)."
+    },
+    {
+      "id": "stats-meta",
+      "text": "1,368 rows come from PxWeb or Statistics Canada services. Some statistics endpoints return metadata or a pointer on GET; the table may need a second request or a POST."
+    },
+    {
+      "id": "record-count",
+      "text": "505,280 rows are map-layer queries with resultRecordCount set: the tested call asked for a few records; change the query to get the full layer."
+    },
+    {
+      "id": "limit-1",
+      "text": "105,811 rows carry limit=1: the tested call asked for one record; raise the limit or page through."
+    },
+    {
+      "id": "portal",
+      "text": "145,326 rows are open-data portal dataset records, which may return a dataset record with links rather than the table itself."
+    },
+    {
+      "id": "files",
+      "text": "12,462 rows are files (zip 8,297, txt 4,165) rather than bodies an agent reads directly."
+    },
+    {
+      "id": "roots",
+      "text": "2,394 rows are service root addresses (the host alone or an API or version path such as /v1, with no query), which may describe the service rather than return data; the sample, examples and recommended lists use other rows first."
+    },
+    {
+      "id": "pack",
+      "text": "456,571 rows are map layers on ArcGIS Online (services*.arcgis.com and utility.arcgis.com), where anyone can publish: layers from many owners, not only governments. Check the layer owner before you use one; only layers with a civic term in the title are used as starting points."
+    },
+    {
+      "id": "pack",
+      "text": "1,109 rows are OpenStreetMap extracts listed on the Humanitarian Data Exchange (titles starting \"HDX:\"), community map data rather than government records."
+    },
+    {
+      "id": "pack",
+      "text": "5,788 rows from pndb.opendatasoft.com are biodiversity research datasets (species counts, sightings, genetics), not civic records."
+    },
+    {
+      "id": "pack",
+      "text": "1,240 rows from datasource.kapsarc.org are energy and economics research datasets, not civic records; they are not used as starting points."
+    },
+    {
+      "id": "pack",
+      "text": "330,405 rows have a dataset id as their title rather than a name; read the record to see what it holds."
+    },
+    {
+      "id": "quiet",
+      "text": "Stations and feeds can go quiet after their test date; re-test a URL before you rely on it."
+    },
+    {
+      "id": "not-in",
+      "text": "Not in this pack: endpoints that need a key or a POST, and URLs that did not pass."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 1,161 rows whose URL carried a credential-looking parameter or a login."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 2 rows with a private or local address."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 10 rows with an email-like address."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 29,696 ArcGIS Survey123 layers (they can hold people's form answers)."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 11 camera or image URLs (webcam and camera feeds, picture and video files)."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 49 class-exercise copies of the same few ArcGIS Online layers (Miami Beach sea level rise, high-risk areas without shelter, flooded areas, sea level rise and storm surge maps) across many organisations, many with a person's name in the title."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 273 layers marked editable in the title (they can hold entries that people added)."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 5,340 ArcGIS layers that keep a form's default service name (they can hold people's form answers)."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 18 rows that passed a data call only from a network location in India."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 5,173 ArcGIS class or coursework layers (lab, assignment, exam, quiz, lesson, exercise, tutorial and final-project layers, copies of class layers, layers named for a person or a person's home, and layers whose name ends in a person's name or holds a student number)."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 947 ArcGIS layers that hold reports, comments, submissions or form responses sent in by the public."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 102,904 rows of server information from Mastodon, PeerTube, Lemmy, Nostr and other social network servers (instance documents name the server's contact person)."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 1 row that repeats an address already in the pack."
+    }
+  ],
+  "name": "1.3m-government-open-data-apis",
+  "old_name": "government-open-data-api-endpoints",
+  "services_tested": {
+    "services": 56916,
+    "tested": 3166059,
+    "passed": 2593901,
+    "passed_pct": 81,
+    "line": "Across these services: 3.1M tested · 81% passed a keyless call",
+    "note": "Counted over the 56,916 export services that this pack's rows belong to: the sum of each service's own tested count and passed count (a keyless GET that returned a data body). They cover every tested endpoint of those services, not only the rows in this pack. The figures in the line are rounded down. Over every service of the export the same sums are 5,129,846 tested and 3,726,509 passed."
+  },
+  "overlaps": [
+    {
+      "repo": "weather-api-endpoints",
+      "name": "190k-weather-apis-for-agents",
+      "title": "Weather API endpoints",
+      "shared": 4943
+    },
+    {
+      "repo": "transit-api-endpoints",
+      "name": "270k-transit-apis-for-agents",
+      "title": "Transit API endpoints",
+      "shared": 22366
+    },
+    {
+      "repo": "water-api-endpoints",
+      "name": "270k-water-apis-for-agents",
+      "title": "Rivers and water API endpoints",
+      "shared": 2525
+    },
+    {
+      "repo": "finance-economy-api-endpoints",
+      "name": "130k-finance-economy-apis-for-agents",
+      "title": "Finance and economy API endpoints",
+      "shared": 8283
+    },
+    {
+      "repo": "india-api-endpoints",
+      "name": "130k-india-apis-for-agents",
+      "title": "India API endpoints",
+      "shared": 5038
+    },
+    {
+      "repo": "statistics-api-endpoints",
+      "name": "290k-statistics-apis-for-agents",
+      "title": "Statistics and census API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "oceans-api-endpoints",
+      "name": "86k-oceans-apis-for-agents",
+      "title": "Ocean and marine API endpoints",
+      "shared": 1157
+    },
+    {
+      "repo": "maritime-api-endpoints",
+      "name": "24k-maritime-apis-for-agents",
+      "title": "Maritime API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "environment-api-endpoints",
+      "name": "170k-environment-apis-for-agents",
+      "title": "Environment API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "air-quality-api-endpoints",
+      "name": "20k-air-quality-apis-for-agents",
+      "title": "Air quality API endpoints",
+      "shared": 365
+    },
+    {
+      "repo": "maps-gis-api-endpoints",
+      "name": "380k-maps-gis-apis-for-agents",
+      "title": "Maps and GIS API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "agent-ready-api-endpoints",
+      "name": "2.5m-agent-ready-apis",
+      "title": "Agent-ready API endpoints",
+      "shared": 1008314
+    },
+    {
+      "repo": "health-api-endpoints",
+      "name": "96k-health-apis-for-agents",
+      "title": "Health API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "science-api-endpoints",
+      "name": "380k-science-apis-for-agents",
+      "title": "Science API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "hazards-api-endpoints",
+      "name": "53k-hazards-apis-for-agents",
+      "title": "Hazards and alerts API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "wildfire-api-endpoints",
+      "name": "6.5k-wildfire-apis-for-agents",
+      "title": "Wildfire API endpoints",
+      "shared": 85
+    },
+    {
+      "repo": "energy-api-endpoints",
+      "name": "72k-energy-apis-for-agents",
+      "title": "Energy API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "aviation-api-endpoints",
+      "name": "25k-aviation-apis-for-agents",
+      "title": "Aviation API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "traffic-api-endpoints",
+      "name": "24k-traffic-apis-for-agents",
+      "title": "Traffic and roadworks API endpoints",
+      "shared": 199
+    },
+    {
+      "repo": "parking-api-endpoints",
+      "name": "12k-parking-apis-for-agents",
+      "title": "Parking API endpoints",
+      "shared": 846
+    },
+    {
+      "repo": "earthquake-api-endpoints",
+      "name": "10k-earthquake-apis-for-agents",
+      "title": "Earthquake API endpoints",
+      "shared": 160
+    },
+    {
+      "repo": "volcano-tsunami-api-endpoints",
+      "name": "5.2k-volcano-tsunami-apis-for-agents",
+      "title": "Volcano and tsunami API endpoints",
+      "shared": 115
+    },
+    {
+      "repo": "bike-share-api-endpoints",
+      "name": "17k-bike-share-apis-for-agents",
+      "title": "Bike-share API endpoints",
+      "shared": 26
+    }
+  ],
+  "pack_count": 24,
+  "services_file_rows": 57593,
+  "sample_mix": [
+    {
+      "source": "ArcGIS Online layers",
+      "focus_rows": 50745,
+      "sample_rows": 43
+    },
+    {
+      "source": "Портал відкритих даних (data.gov.ua)",
+      "focus_rows": 18171,
+      "sample_rows": 16
+    },
+    {
+      "source": "Catálogo de datos abiertos del IBESTAT (intranet.caib.es)",
+      "focus_rows": 16338,
+      "sample_rows": 15
+    },
+    {
+      "source": "opendata.schleswig-holstein.de",
+      "focus_rows": 12400,
+      "sample_rows": 11
+    },
+    {
+      "source": "Italia Dati municipal dashboards (cruscotto-italia.dati.gov.it)",
+      "focus_rows": 8453,
+      "sample_rows": 8
+    },
+    {
+      "source": "Datos Abiertos Colombia (datos.gov.co)",
+      "focus_rows": 8092,
+      "sample_rows": 8
+    },
+    {
+      "source": "www.datos.gov.co",
+      "focus_rows": 7797,
+      "sample_rows": 8
+    },
+    {
+      "source": "Tycg (opendata.tycg.gov.tw)",
+      "focus_rows": 7760,
+      "sample_rows": 8
+    },
+    {
+      "source": "Datos Abiertos de Panamá (www.datosabiertos.gob.pa)",
+      "focus_rows": 6948,
+      "sample_rows": 7
+    },
+    {
+      "source": "data.taipei",
+      "focus_rows": 6219,
+      "sample_rows": 6
+    }
+  ],
+  "sample_focus_rows": 912282,
+  "sample_rule": "1,000 rows, or one third of the pack rounded down, whichever is smaller",
+  "files": [
+    {
+      "name": "data/Government_Open_Data_API_Services_AgentPopulation.csv",
+      "rows": 57593,
+      "bytes": 2927461,
+      "sha256": "8914eced659e2323921d5450a0878feb408e650f4579fbf0fe786f381e063773"
+    },
+    {
+      "name": "data/Government_Open_Data_API_Endpoints_AgentPopulation_Sample.csv",
+      "rows": 1000,
+      "bytes": 294671,
+      "sha256": "e22ed033dd38f91c4329ff3f05b38cf12575519397c8cb07bd57411c64289274"
+    },
+    {
+      "name": "data/Government_Open_Data_API_Endpoints_AgentPopulation_Sample.json",
+      "rows": 1000,
+      "bytes": 489298,
+      "sha256": "cc842a8453cf6cbbc7301b9d41ba0d3e3814243e920bc1bee0857e79b605b7d8"
+    }
+  ],
+  "release_asset": {
+    "name": "Government_Open_Data_API_Endpoints_AgentPopulation_Snapshot_2026-11-15.csv.gz",
+    "rows": 1329192,
+    "bytes": 52239418,
+    "raw_bytes": 423274045,
+    "sha256": "b4affa803ef59cb7241f5e8b656a860b0ed3d2870315a6086ee0fbc41ab60625",
+    "url": "https://github.com/agentpopulation/1.3m-government-open-data-apis/releases/latest/download/Government_Open_Data_API_Endpoints_AgentPopulation_Snapshot_2026-11-15.csv.gz"
+  },
+  "release_tag": "snapshot-2026-11-15",
+  "description": "1,329,192 open-data API endpoints that passed a keyless data call. For agent tools, apps, pipelines and evals. CSV, CC BY 4.0.",
+  "readme_ap_share": 0.089,
+  "country_counts": {
+    "US": 457556,
+    "": 97750,
+    "JP": 61130,
+    "GB": 59873,
+    "TW": 56160,
+    "DE": 54274,
+    "IT": 52634,
+    "ES": 51956,
+    "ID": 41519,
+    "FR": 35648,
+    "CO": 24936,
+    "TH": 23990,
+    "NL": 20281,
+    "UA": 19691,
+    "CA": 19101,
+    "BR": 16618,
+    "AU": 11648,
+    "SE": 10424,
+    "CH": 9508,
+    "PA": 9136,
+    "IE": 8759,
+    "AR": 8633,
+    "SC": 8562,
+    "NO": 7459,
+    "CZ": 6906,
+    "PL": 6602,
+    "IO": 6328,
+    "EC": 6299,
+    "GR": 5963,
+    "SK": 5566,
+    "HK": 5564,
+    "IL": 5466,
+    "EU": 5446,
+    "IN": 5038,
+    "FI": 4619,
+    "BE": 4175,
+    "PT": 4008,
+    "MX": 3775,
+    "KR": 3715,
+    "LV": 3691,
+    "CL": 3609,
+    "AT": 3523,
+    "SG": 3266,
+    "HR": 3013,
+    "RS": 2892,
+    "DK": 2829,
+    "VG": 2647,
+    "LT": 2526,
+    "TG": 2400,
+    "NZ": 2324,
+    "AM": 2169,
+    "EE": 2034,
+    "KY": 2008,
+    "TR": 2005,
+    "CN": 1972,
+    "ZA": 1867,
+    "RO": 1544,
+    "AZ": 1477,
+    "SA": 1457,
+    "IS": 1402,
+    "ZM": 1246,
+    "AE": 1166,
+    "CR": 1084,
+    "GG": 1080,
+    "UY": 1040,
+    "BG": 1010,
+    "FJ": 941,
+    "DO": 825,
+    "HT": 825,
+    "JM": 821,
+    "TT": 809,
+    "KE": 795,
+    "RU": 784,
+    "GT": 724,
+    "BO": 693,
+    "NC": 690,
+    "NG": 687,
+    "PE": 673,
+    "GN": 668,
+    "PK": 659,
+    "KG": 629,
+    "VN": 624,
+    "TJ": 622,
+    "HN": 617,
+    "MK": 577,
+    "SV": 546,
+    "LU": 525,
+    "SR": 507,
+    "BH": 463,
+    "AI": 448,
+    "MY": 413,
+    "SI": 412,
+    "KH": 406,
+    "BZ": 403,
+    "PG": 362,
+    "MD": 360,
+    "SZ": 335,
+    "MM": 319,
+    "CM": 300,
+    "LA": 289,
+    "SN": 271,
+    "GY": 270,
+    "AL": 260,
+    "WS": 257,
+    "TO": 219,
+    "SO": 210,
+    "PR": 204,
+    "HU": 200,
+    "PH": 186,
+    "TN": 180,
+    "ET": 168,
+    "ZW": 160,
+    "OM": 133,
+    "FM": 128,
+    "PY": 113,
+    "VE": 109,
+    "EG": 104,
+    "JE": 90,
+    "RE": 81,
+    "FO": 80,
+    "GW": 70,
+    "AS": 59,
+    "BT": 59,
+    "BA": 51,
+    "LY": 48,
+    "NI": 48,
+    "BJ": 37,
+    "UG": 36,
+    "IQ": 35,
+    "GL": 32,
+    "AX": 31,
+    "BN": 28,
+    "KZ": 27,
+    "MV": 27,
+    "GH": 26,
+    "BY": 25,
+    "MN": 25,
+    "SX": 25,
+    "PW": 24,
+    "RW": 24,
+    "VI": 24,
+    "JO": 22,
+    "TC": 21,
+    "MA": 20,
+    "MG": 19,
+    "TZ": 19,
+    "BI": 18,
+    "CY": 18,
+    "MQ": 18,
+    "LI": 17,
+    "MW": 17,
+    "BW": 16,
+    "CI": 16,
+    "ME": 16,
+    "NA": 16,
+    "BS": 15,
+    "MZ": 15,
+    "AG": 14,
+    "CV": 14,
+    "GA": 14,
+    "ML": 14,
+    "SB": 14,
+    "SL": 14,
+    "YE": 14,
+    "BD": 13,
+    "BM": 13,
+    "CU": 13,
+    "CW": 13,
+    "DM": 13,
+    "GE": 13,
+    "IR": 13,
+    "LC": 13,
+    "LR": 13,
+    "NE": 13,
+    "SY": 13,
+    "TV": 13,
+    "AD": 12,
+    "AW": 12,
+    "CG": 12,
+    "KI": 12,
+    "MH": 12,
+    "MT": 12,
+    "NU": 12,
+    "SD": 12,
+    "SJ": 12,
+    "SS": 12,
+    "AO": 11,
+    "BB": 11,
+    "BF": 11,
+    "CC": 11,
+    "CF": 11,
+    "CK": 11,
+    "DZ": 11,
+    "ER": 11,
+    "GD": 11,
+    "GI": 11,
+    "GM": 11,
+    "GP": 11,
+    "GQ": 11,
+    "LS": 11,
+    "MC": 11,
+    "MP": 11,
+    "MR": 11,
+    "NR": 11,
+    "PF": 11,
+    "PM": 11,
+    "SH": 11,
+    "ST": 11,
+    "TD": 11,
+    "TK": 11,
+    "VA": 11,
+    "VC": 11,
+    "VU": 11,
+    "WF": 11,
+    "BL": 10,
+    "CX": 10,
+    "DJ": 10,
+    "GF": 10,
+    "IM": 10,
+    "KM": 10,
+    "KN": 10,
+    "MS": 10,
+    "NF": 10,
+    "AF": 9,
+    "BQ": 9,
+    "CD": 9,
+    "FK": 9,
+    "LK": 9,
+    "MF": 9,
+    "PN": 9,
+    "QA": 9,
+    "SM": 9,
+    "TM": 9,
+    "UZ": 9,
+    "GU": 8,
+    "MO": 8,
+    "MU": 8,
+    "AQ": 7,
+    "EH": 7,
+    "KP": 7,
+    "KW": 7,
+    "LB": 7,
+    "NP": 7,
+    "PS": 6,
+    "TF": 6,
+    "TL": 6,
+    "UM": 6,
+    "YT": 6,
+    "GS": 5,
+    "HM": 4,
+    "BV": 1
+  }
+}

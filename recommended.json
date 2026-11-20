@@ -1,0 +1,701 @@
+{
+  "pack": "government-open-data-api-endpoints",
+  "title": "Government open data API endpoints",
+  "snapshot": "2026-11-15",
+  "tested": {
+    "min": "2026-11-10",
+    "max": "2026-11-15",
+    "text": "10–15 Nov 2026"
+  },
+  "note": "On the date in last_tested (IST), one GET to the URL, sent with no key, returned HTTP 2xx and a non-empty data body. HTML pages and empty results did not pass. The format column records what came back. This is a test result for that date, not a promise that the URL answers today. Licences, terms, rate limits, accuracy and freshness were not reviewed. Endpoints are URLs, not separate APIs; many share one service.",
+  "licence": "CC BY 4.0: credit AgentPopulation and link https://agentpopulation.com",
+  "focus": "NOT (title matches /^HDX: /i OR host in (pndb.opendatasoft.com, datasource.kapsarc.org)) AND (NOT url matches ///(services[0-9]*(-[a-z0-9]+)?|utility)\\.arcgis\\.com//i OR title matches /\\b(city|town|county|municipal|borough|village|township|council|ward|district|parish|state|department|public|school|park|zoning|parcel|librar|fire|police|sidewalk|trail|bridge|evacuation|permit|street|road|hydrant|polling|precinct|boundar)/i)",
+  "buckets": [
+    {
+      "id": "agent",
+      "name": "Agent tools",
+      "title": "City and national portal records an agent can query (Socrata, Opendatasoft, CKAN)",
+      "filter": "tags has agent-ready AND subcategory matches /^((socrata|opendatasoft|ckan) dataset|OpenDataSoft network)$/i",
+      "endpoints": 120356,
+      "notes": [
+        "111574 of these ask for one record (limit=1 or $limit=1); raise the limit or add a filter for more."
+      ],
+      "criteria": "Services in this pack with the most endpoints that match this bucket and are tagged agent-ready (no key sent in the test call, JSON body, passed a data call). Ties go to the service with more country codes, then by name. Only services with at least one bucket row that matches the focus rule are listed, and the sample comes from those rows; the counts cover the whole bucket. The sample URL is the first row by URL sort after preferring, in this order: rows that match the bucket's sample preference when it has one, rows that return values rather than describe a dataset or a service (not ERDDAP /info/ pages, OGC GetCapabilities requests, bare OWS addresses, PxWeb tables, UN SDG series lists, Statistics Canada download pointers, WorldPop listings, GTFS validation reports, untitled rows or service root addresses), and agent-ready rows. Sample preference in this bucket: title matches /\\S\\s+\\S/i. Services named \"ArcGIS organization\" hold map layers from many owners and are added only when fewer than 5 other services match.",
+      "services": [
+        {
+          "service": "Datos Abiertos Colombia",
+          "display": "Datos Abiertos Colombia",
+          "host": "datos.gov.co",
+          "endpoints_in_bucket": 8092,
+          "endpoints_in_pack": 8092,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://datos.gov.co/resource/226x-qjxq.json?$limit=1",
+          "sample_title": "Estadistica UNDMO",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-12"
+        },
+        {
+          "service": "Banque de France Webstat",
+          "display": "Banque de France Webstat",
+          "host": "webstat.banque-france.fr",
+          "endpoints_in_bucket": 3975,
+          "endpoints_in_pack": 3975,
+          "country_codes": [
+            "FR"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://webstat.banque-france.fr/api/explore/v2.1/catalog/datasets/acpr-a-bq-activite-tb_fin_comp_coeff_expl7406-456-_z-_z-phnc-_z-top6_aut_groupes/records?limit=1",
+          "sample_title": "Amortissements des immeubles de placement",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-13"
+        },
+        {
+          "service": "NYC Open Data (Socrata)",
+          "display": "NYC Open Data (Socrata)",
+          "host": "data.cityofnewyork.us",
+          "endpoints_in_bucket": 1682,
+          "endpoints_in_pack": 3868,
+          "country_codes": [
+            "US"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 5,
+          "sample_url": "https://data.cityofnewyork.us/resource/242c-ru4i.json?$limit=1",
+          "sample_title": "DSNY Special Waste Drop-off Sites",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-11"
+        },
+        {
+          "service": "Rotterdam",
+          "display": "Rotterdam",
+          "host": "data.rotterdam.nl",
+          "endpoints_in_bucket": 1432,
+          "endpoints_in_pack": 1432,
+          "country_codes": [
+            "NL"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://data.rotterdam.nl/api/explore/v2.1/catalog/datasets/aandeel_algemeen/records?limit=1",
+          "sample_title": "Aandeel algemeen",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-12"
+        },
+        {
+          "service": "Digital Wallonia",
+          "display": "Digital Wallonia",
+          "host": "digitalwallonia.opendatasoft.com",
+          "endpoints_in_bucket": 1152,
+          "endpoints_in_pack": 1152,
+          "country_codes": [
+            "BE"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://digitalwallonia.opendatasoft.com/api/explore/v2.1/catalog/datasets/029-ores-electricite-et-gaz-taux-de-communicabilite-des-compteurs-smart/records?limit=1",
+          "sample_title": "029-ores-electricite-et-gaz-taux-de-communicabilite-des-compteurs-smart",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-12"
+        },
+        {
+          "service": "Bayareametro",
+          "display": "Bayareametro",
+          "host": "data.bayareametro.gov",
+          "endpoints_in_bucket": 1037,
+          "endpoints_in_pack": 1056,
+          "country_codes": [
+            "US"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://data.bayareametro.gov/resource/234v-3byw.json?$limit=1",
+          "sample_title": "(Block Group) Number of Renter Buildings that are 1-4 Units",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-11"
+        },
+        {
+          "service": "data.wa.gov",
+          "display": "data.wa.gov",
+          "host": "data.wa.gov",
+          "endpoints_in_bucket": 1013,
+          "endpoints_in_pack": 2161,
+          "country_codes": [
+            "US"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 4,
+          "sample_url": "https://data.wa.gov/resource/229f-7afc.json?$limit=1",
+          "sample_title": "Report Card Teacher Qualification by School Title I Served Status School Years 2021-22 to 2024-25",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-12"
+        },
+        {
+          "service": "Iledefrance",
+          "display": "Iledefrance",
+          "host": "opendata.iledefrance.fr",
+          "endpoints_in_bucket": 1006,
+          "endpoints_in_pack": 1006,
+          "country_codes": [
+            "FR"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://opendata.iledefrance.fr/api/explore/v2.1/catalog/datasets/100-sites-sportifs-emblematiques/records?limit=1",
+          "sample_title": "100-sites-sportifs-emblematiques",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "app",
+      "name": "App features",
+      "title": "Schools, parks, libraries, zoning and public-safety layers for city maps",
+      "filter": "subcategory matches /^ArcGIS feature layer · (schools|parks|libraries|fire stations|police stations|zoning|trails|sidewalks|evacuation)$/i",
+      "endpoints": 27403,
+      "notes": [],
+      "criteria": "Services in this pack with the most endpoints that match this bucket and passed a data call. Ties go to the service with more country codes, then by name. Only services with at least one bucket row that matches the focus rule are listed, and the sample comes from those rows; the counts cover the whole bucket. The sample URL is the first row by URL sort after preferring, in this order: rows that match the bucket's sample preference when it has one, rows that return values rather than describe a dataset or a service (not ERDDAP /info/ pages, OGC GetCapabilities requests, bare OWS addresses, PxWeb tables, UN SDG series lists, Statistics Canada download pointers, WorldPop listings, GTFS validation reports, untitled rows or service root addresses), and agent-ready rows. Sample preference in this bucket: NOT url matches ///(services[0-9]*(-[a-z0-9]+)?|utility)\\.arcgis\\.com//i. Services named \"ArcGIS organization\" hold map layers from many owners and are added only when fewer than 5 other services match.",
+      "services": [
+        {
+          "service": "University of Calgary (ArcGIS Online)",
+          "display": "University of Calgary (ArcGIS Online)",
+          "host": "services2.arcgis.com",
+          "endpoints_in_bucket": 344,
+          "endpoints_in_pack": 459,
+          "country_codes": [
+            "CA",
+            "ES",
+            "GB",
+            "KR",
+            "MX",
+            "TW",
+            "US"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services2.arcgis.com/XSv3KNGfmrd1txPN/arcgis/rest/services/15%20min%20walking%20distance%20to%20library/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "15 min walking distance to library",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-14"
+        },
+        {
+          "service": "Clemson University (ArcGIS Online)",
+          "display": "Clemson University (ArcGIS Online)",
+          "host": "services1.arcgis.com",
+          "endpoints_in_bucket": 217,
+          "endpoints_in_pack": 1588,
+          "country_codes": [
+            "CN",
+            "GB",
+            "KE",
+            "US"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services1.arcgis.com/x5wCko8UnSi4h0CB/arcgis/rest/services/AllLabels_NoCooperLibrary_WFL1/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "All Labels No Cooper Library",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-14"
+        },
+        {
+          "service": "University of Nevada, Reno (ArcGIS Online)",
+          "display": "University of Nevada, Reno (ArcGIS Online)",
+          "host": "services3.arcgis.com",
+          "endpoints_in_bucket": 170,
+          "endpoints_in_pack": 528,
+          "country_codes": [
+            "FR",
+            "US"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services3.arcgis.com/QCH1Le0vwRIyplqB/arcgis/rest/services/2024trails_start_end/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "2024 Trails_4",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-14"
+        },
+        {
+          "service": "University of Minnesota (ArcGIS Online)",
+          "display": "University of Minnesota (ArcGIS Online)",
+          "host": "services.arcgis.com",
+          "endpoints_in_bucket": 119,
+          "endpoints_in_pack": 1539,
+          "country_codes": [
+            "ES",
+            "US"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services.arcgis.com/8df8p0NlLFEShl0r/arcgis/rest/services/1950_Zoning/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "1950 Zoning",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-14"
+        },
+        {
+          "service": "University of Utah Reasearch/Education (ArcGIS Online)",
+          "display": "University of Utah Reasearch/Education (ArcGIS Online)",
+          "host": "services1.arcgis.com",
+          "endpoints_in_bucket": 109,
+          "endpoints_in_pack": 202,
+          "country_codes": [
+            "CA",
+            "US"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services1.arcgis.com/2exN3kG1f2h7coIQ/arcgis/rest/services/Animal%20Locations%20On%20Trails/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "Animal Locations On Trails",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-14"
+        },
+        {
+          "service": "GIS Online at UCLA (ArcGIS Online)",
+          "display": "GIS Online at UCLA (ArcGIS Online)",
+          "host": "services7.arcgis.com",
+          "endpoints_in_bucket": 101,
+          "endpoints_in_pack": 982,
+          "country_codes": [
+            "US"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services7.arcgis.com/2hYXmwteFLemN5bW/arcgis/rest/services/2017_Formal_County_Parks/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "Formal County Parks",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-14"
+        },
+        {
+          "service": "University of Arizona GIS (ArcGIS Online)",
+          "display": "University of Arizona GIS (ArcGIS Online)",
+          "host": "services1.arcgis.com",
+          "endpoints_in_bucket": 96,
+          "endpoints_in_pack": 819,
+          "country_codes": [
+            "GB",
+            "TR",
+            "US"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services1.arcgis.com/Ezk9fcjSUkeadg6u/arcgis/rest/services/A3_DR_Parks/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "A3 DR Parks",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-14"
+        },
+        {
+          "service": "University of Maryland (ArcGIS Online)",
+          "display": "University of Maryland (ArcGIS Online)",
+          "host": "services1.arcgis.com",
+          "endpoints_in_bucket": 92,
+          "endpoints_in_pack": 428,
+          "country_codes": [
+            "US"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services1.arcgis.com/qTQ6qYkHpxlu0G82/arcgis/rest/services/Camp_Springs_Schools/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "Camp Springs Schools",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "id": "grounding",
+      "name": "Grounding and data pipelines",
+      "title": "Municipal, regional and national files (CSV, XML, ZIP) for scheduled loads",
+      "filter": "format in (csv, xml, zip, txt)",
+      "endpoints": 311011,
+      "notes": [],
+      "criteria": "Services in this pack with the most endpoints that match this bucket and passed a data call. Ties go to the service with more country codes, then by name. Only services with at least one bucket row that matches the focus rule are listed, and the sample comes from those rows; the counts cover the whole bucket. The sample URL is the first row by URL sort after preferring, in this order: rows that match the bucket's sample preference when it has one, rows that return values rather than describe a dataset or a service (not ERDDAP /info/ pages, OGC GetCapabilities requests, bare OWS addresses, PxWeb tables, UN SDG series lists, Statistics Canada download pointers, WorldPop listings, GTFS validation reports, untitled rows or service root addresses), and agent-ready rows. Sample preference in this bucket: format is csv AND title matches /\\S\\s+\\S/i AND NOT url matches /\\.(xls|xlsx|gz)$/i. Services named \"ArcGIS organization\" hold map layers from many owners and are added only when fewer than 5 other services match.",
+      "services": [
+        {
+          "service": "Портал відкритих даних",
+          "display": "Портал відкритих даних",
+          "host": "data.gov.ua",
+          "endpoints_in_bucket": 15635,
+          "endpoints_in_pack": 18171,
+          "country_codes": [
+            "UA"
+          ],
+          "formats": [
+            "csv",
+            "xml",
+            "txt",
+            "zip"
+          ],
+          "formats_in_pack": 6,
+          "sample_url": "https://data.gov.ua/dataset/000e2494-3d5a-4187-b17b-06cc3ed398c3/resource/b34fe93f-6808-486c-b7be-ba4eeb7f3bf1/download/line.csv",
+          "sample_title": "Дані обліку громадян, які потребують поліпшення житлових умов (квартирний облік) Бобровицької міської ради - line.csv",
+          "sample_format": "csv",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "Tycg",
+          "display": "Tycg",
+          "host": "opendata.tycg.gov.tw",
+          "endpoints_in_bucket": 7757,
+          "endpoints_in_pack": 7760,
+          "country_codes": [
+            "TW"
+          ],
+          "formats": [
+            "csv",
+            "xml"
+          ],
+          "formats_in_pack": 3,
+          "sample_url": "https://opendata.tycg.gov.tw/api/dataset/00127afa-b020-43f9-9ae0-256ca1254c80/resource/1a717396-e378-4ea5-8921-e64271faa60c/download",
+          "sample_title": "桃園市政府工務局: data.gov.tw dataset resource (CSV)",
+          "sample_format": "csv",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "opendata.schleswig-holstein.de",
+          "display": "opendata.schleswig-holstein.de",
+          "host": "opendata.schleswig-holstein.de",
+          "endpoints_in_bucket": 7685,
+          "endpoints_in_pack": 12400,
+          "country_codes": [
+            "DE"
+          ],
+          "formats": [
+            "csv",
+            "txt",
+            "xml"
+          ],
+          "formats_in_pack": 4,
+          "sample_url": "https://opendata.schleswig-holstein.de/data/antikensammlung/Metadaten%20(Zuordnung).csv",
+          "sample_title": "TransformingAntiquity - Metadaten (Zuordnung)",
+          "sample_format": "csv",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "data.taipei",
+          "display": "data.taipei",
+          "host": "data.taipei",
+          "endpoints_in_bucket": 6145,
+          "endpoints_in_pack": 6219,
+          "country_codes": [
+            "TW"
+          ],
+          "formats": [
+            "csv",
+            "xml",
+            "zip"
+          ],
+          "formats_in_pack": 5,
+          "sample_url": "https://data.taipei/api/dataset/0016a730-aef1-43c5-baaf-0f08e270c0f6/resource/98fce0a1-66f9-4b10-b384-1e80a7999e27/download",
+          "sample_title": "臺北市政府工務局水利工程處: data.gov.tw dataset resource (CSV)",
+          "sample_format": "csv",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "Fews",
+          "display": "Fews",
+          "host": "fdw.fews.net",
+          "endpoints_in_bucket": 4774,
+          "endpoints_in_pack": 4821,
+          "country_codes": [],
+          "formats": [
+            "xml"
+          ],
+          "formats_in_pack": 3,
+          "sample_url": "https://fdw.fews.net/api/ipcphasemap/country/AF/CS/2011-01-01.kml",
+          "sample_title": "Afghanistan: Acute Food Insecurity Classification (January 2011 - June 2011) - Current Situation: January 2011 (.kml)",
+          "sample_format": "xml",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "Moi",
+          "display": "Moi",
+          "host": "opdadm.moi.gov.tw",
+          "endpoints_in_bucket": 4766,
+          "endpoints_in_pack": 4771,
+          "country_codes": [
+            "TW"
+          ],
+          "formats": [
+            "csv",
+            "zip",
+            "xml"
+          ],
+          "formats_in_pack": 4,
+          "sample_url": "https://opdadm.moi.gov.tw/api/v1/no-auth/resource/api/dataset/0073DC43-6EDE-4A94-8A0B-56F3521CFCAB/resource/054E4275-C3B6-4E7E-9B45-AC5598BB9E8F/download",
+          "sample_title": "戶政司: data.gov.tw dataset resource (CSV)",
+          "sample_format": "csv",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "Plataforma de Datos Abiertos de la Prefe",
+          "display": "Plataforma de Datos Abiertos de la Prefe",
+          "host": "datosabiertos.carchi.gob.ec",
+          "endpoints_in_bucket": 4709,
+          "endpoints_in_pack": 4709,
+          "country_codes": [
+            "EC"
+          ],
+          "formats": [
+            "csv",
+            "zip",
+            "txt"
+          ],
+          "formats_in_pack": 3,
+          "sample_url": "https://datosabiertos.carchi.gob.ec/dataset/0057f381-fdbc-4747-8a64-51bcf439e921/resource/7363b3a1-0414-4491-b8cd-e3ccc4da099c/download/2025-Abril-Art.-29-Informacion-Publica-Empresas-Publicas-292conjuntodedatos.csv.csv",
+          "sample_title": "29.2 Informacion Publica Empresas Publicas obligación específica abril del 2025 - 29.2. CONJUNTO DE DATOS",
+          "sample_format": "csv",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "Proyecto Enlaza - Open Data de la provin",
+          "display": "Proyecto Enlaza - Open Data de la provin",
+          "host": "enlaza.eprinsa.es",
+          "endpoints_in_bucket": 4181,
+          "endpoints_in_pack": 5715,
+          "country_codes": [
+            "ES"
+          ],
+          "formats": [
+            "xml",
+            "csv"
+          ],
+          "formats_in_pack": 3,
+          "sample_url": "https://enlaza.eprinsa.es/file/datahub/0051aeda-69e8-40c2-9e83-3385aa73e57a.csv",
+          "sample_title": "Adjudicatarios de obras",
+          "sample_format": "csv",
+          "sample_last_tested": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "id": "evals",
+      "name": "Evals and testing",
+      "title": "Portal records, layers and files to test a civic-data tool",
+      "filter": "the whole pack",
+      "endpoints": 1329192,
+      "notes": [],
+      "criteria": "Services in this pack that returned the most different formats, then the most endpoints that passed a data call, then by name: a mix of response shapes to test parsers and tool calls. Only services with at least one bucket row that matches the focus rule are listed, and the sample comes from those rows; the counts cover the whole bucket. The sample URL is the first row by URL sort after preferring, in this order: rows that match the bucket's sample preference when it has one, rows that return values rather than describe a dataset or a service (not ERDDAP /info/ pages, OGC GetCapabilities requests, bare OWS addresses, PxWeb tables, UN SDG series lists, Statistics Canada download pointers, WorldPop listings, GTFS validation reports, untitled rows or service root addresses), and agent-ready rows. Sample preference in this bucket: title matches /\\S\\s+\\S/i. Services named \"ArcGIS organization\" hold map layers from many owners and are added only when fewer than 5 other services match.",
+      "services": [
+        {
+          "service": "Портал відкритих даних",
+          "display": "Портал відкритих даних",
+          "host": "data.gov.ua",
+          "endpoints_in_bucket": 18171,
+          "endpoints_in_pack": 18171,
+          "country_codes": [
+            "UA"
+          ],
+          "formats": [
+            "csv",
+            "json",
+            "xml",
+            "txt",
+            "zip",
+            "geojson"
+          ],
+          "formats_in_pack": 6,
+          "sample_url": "https://data.gov.ua/dataset/018609e2-ffe8-44ff-bf36-132fa802895e/resource/20013b47-3c04-4960-9c9d-812c28bdc5ea/download/37577078_35_4382904.json",
+          "sample_title": "Звіти про використання бюджетних коштів КСП \"Інженерні мережі\" - 37577078_35_4382904",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "Tokyo Open Data CKAN portal",
+          "display": "Tokyo Open Data CKAN portal",
+          "host": "www.opendata.metro.tokyo.lg.jp",
+          "endpoints_in_bucket": 3476,
+          "endpoints_in_pack": 3476,
+          "country_codes": [
+            "JP"
+          ],
+          "formats": [
+            "csv",
+            "geojson",
+            "txt",
+            "json",
+            "zip",
+            "xml"
+          ],
+          "formats_in_pack": 6,
+          "sample_url": "https://www.opendata.metro.tokyo.lg.jp/shinagawa/h21ryokuhibunpu.geojson",
+          "sample_title": "H21緑被分布 - H21緑被分布情報(geojson形式)",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "Greece National Data Portal",
+          "display": "Greece National Data Portal",
+          "host": "data.gov.gr",
+          "endpoints_in_bucket": 2345,
+          "endpoints_in_pack": 2345,
+          "country_codes": [
+            "GR"
+          ],
+          "formats": [
+            "json",
+            "csv",
+            "xml",
+            "geojson",
+            "txt",
+            "zip"
+          ],
+          "formats_in_pack": 6,
+          "sample_url": "https://data.gov.gr/api/3/action/datastore_search?resource_id=004f8882-bd32-4e80-a0a6-9fc91a76e396&limit=1",
+          "sample_title": "Απασχόληση και Αγορά Εργασίας Δήμου Πατρέων - Απασχολούμενος πληθυσμός ανά υπηκοότητα και κατάσταση απασχόλησης (Δήμος Πατρέων, 2021)",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "datamillnorth.org",
+          "display": "datamillnorth.org",
+          "host": "datamillnorth.org",
+          "endpoints_in_bucket": 1301,
+          "endpoints_in_pack": 1301,
+          "country_codes": [
+            "GB"
+          ],
+          "formats": [
+            "csv",
+            "xml",
+            "geojson",
+            "json",
+            "txt",
+            "zip"
+          ],
+          "formats_in_pack": 6,
+          "sample_url": "https://datamillnorth.org/download/29r6j/4c170c50-09d0-4f14-8725-3477f0310d5c/Community%20with%20postcodes%20Apr_2020-with-coordinates.geojson",
+          "sample_title": "Community services - April 2020",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "Datos Abiertos Bogotá",
+          "display": "Datos Abiertos Bogotá",
+          "host": "datosabiertos.bogota.gov.co",
+          "endpoints_in_bucket": 787,
+          "endpoints_in_pack": 787,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json",
+            "csv",
+            "geojson",
+            "xml",
+            "txt",
+            "zip"
+          ],
+          "formats_in_pack": 6,
+          "sample_url": "https://datosabiertos.bogota.gov.co/api/3/action/datastore_search?resource_id=01f8241b-3cf5-4166-98ea-a60ddc36d402&limit=1",
+          "sample_title": "Ejecución Presupuestal",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-12"
+        },
+        {
+          "service": "Public",
+          "display": "Public",
+          "host": "download.data.public.lu",
+          "endpoints_in_bucket": 314,
+          "endpoints_in_pack": 314,
+          "country_codes": [
+            "LU"
+          ],
+          "formats": [
+            "json",
+            "zip",
+            "xml",
+            "geojson",
+            "csv",
+            "txt"
+          ],
+          "formats_in_pack": 6,
+          "sample_url": "https://download.data.public.lu/resources/administrative-entities-2018/20200325-152406/administrative-entities-2018-1808-vg-vfg-vfs-gks-rlp-2018-3.geojson",
+          "sample_title": "SIG-GR @ Ministère du Logement et de l'Aménagement du territoire - Département de l’aménagement du territoire: Administrative entities 2018 / administrative-entities-2018-1808-vg-vfg-vfs-gks-rlp-2018-3.geojson",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "Dublinked Open Data for the Dublin Regio",
+          "display": "Dublinked Open Data for the Dublin Regio",
+          "host": "data.smartdublin.ie",
+          "endpoints_in_bucket": 123,
+          "endpoints_in_pack": 123,
+          "country_codes": [
+            "IE"
+          ],
+          "formats": [
+            "csv",
+            "json",
+            "geojson",
+            "xml",
+            "zip",
+            "txt"
+          ],
+          "formats_in_pack": 6,
+          "sample_url": "https://data.smartdublin.ie/dataset/02e4b256-e517-4bf3-b719-4f53bed64765/resource/8fa299dd-faae-4468-b578-f52eb0c03033/download/burialgrounds_dlr.geojson",
+          "sample_title": "Burial Grounds DLR",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-13"
+        },
+        {
+          "service": "data.taipei",
+          "display": "data.taipei",
+          "host": "data.taipei",
+          "endpoints_in_bucket": 6219,
+          "endpoints_in_pack": 6219,
+          "country_codes": [
+            "TW"
+          ],
+          "formats": [
+            "csv",
+            "xml",
+            "json",
+            "geojson",
+            "zip"
+          ],
+          "formats_in_pack": 5,
+          "sample_url": "https://data.taipei/api/dataset/03e017d7-674d-4665-b874-5a6a020668e4/resource/7ce99e98-be5e-4332-a2b6-4f0980de82e3/download",
+          "sample_title": "臺北市政府工務局新建工程處: data.gov.tw dataset resource (JSON)",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-15"
+        }
+      ]
+    }
+  ]
+}
